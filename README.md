@@ -41,7 +41,7 @@ rpm -ivh tufin-tools-import-usp-exceptions-1.0-20160926.noarch.rpm
 ## Usage
 Once installed, point your favorite web browser to <https://your.tufin.host/tools>, you will see a new link : Import USP Exceptions from CSV.
 
-The follwing webpage will allow you to upload USP exceptions :
+The following webpage will allow you to upload USP exceptions :
 
 ![Import USP Homepage](https://www.dropbox.com/s/u4vwwigmw3zan9t/import-usp-exceptions.png?dl=1)
 
@@ -52,7 +52,8 @@ The follwing webpage will allow you to upload USP exceptions :
 	* Sources and Destinations **must be IP Address or Subnet (IP/Mask) or ANY**
 	* Services **must be tcp or udp with port number or ANY**, ex tcp-443 or udp-53
 	* Date format **must be : Year-Month-Day (%Y-%m-%d)**
-	* CreatedBy **must be a valid SecureTrack account**	* Exception Name **must be unique** otherwise exception will not be inserted
+	* CreatedBy **must be a valid SecureTrack account**
+	* Exception Name **must be unique** otherwise exception will not be inserted
 3. Export the spreadsheet as a **CSV with ';' delimiter**
 4. Upload it using the webpage and click **Submit**
 
