@@ -15,6 +15,8 @@ As this tool is written in perl CGI, it will require the following packages :
 * [tufin-perl-extlib](https://www.dropbox.com/s/xsd1cs55vnza6wq/tufin-perl-extlib-1.2-20160526.noarch.rpm?dl=1)  >= 1.0
 * SecureTrack >= 15.4
 
+*(dependencies compatible with TufinOS 2.X only - 64bits versions)*
+
 ## Installation
 1. Download all the required rpms documented in section [Dependencies](#dependencies) *(available also under dependencies directory)*
 2. Download Import USP Exceptions utility rpm from **GitHub** under **dist** directory
