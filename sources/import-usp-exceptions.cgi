@@ -352,7 +352,7 @@ sub load_csv {
                         push @{$exception->{security_policy_exception}->{exempted_traffic_list}->{exempted_traffic}->{service_collection}->{service_items}->{service_item}}, $new_object;
                 }
                 else {
-                    if ($service =~ m/^(tcp|udp)\-(\d+)/) {
+                    if ($service =~ m/^(tcp|udp)\-(\d+\-?\d+)/) {
                         my $new_object; 
                         $new_object->{'@xsi.type'} = 'custom';
                         $new_object->{protocol} = lc($1);
