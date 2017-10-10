@@ -351,6 +351,18 @@ sub load_csv {
                         $new_object->{predefined_service_name} = 'echo-request';
                         push @{$exception->{security_policy_exception}->{exempted_traffic_list}->{exempted_traffic}->{service_collection}->{service_items}->{service_item}}, $new_object;
                 }
+                 elsif ($service =~ m/ike/i) {
+                     my $new_object;
+                        $new_object->{'@xsi.type'} = 'predefined';
+                        $new_object->{predefined_service_name} = 'IKE';
+                        push @{$exception->{security_policy_exception}->{exempted_traffic_list}->{exempted_traffic}->{service_collection}->{service_items}->{service_item}}, $new_object;
+                }
+                 elsif ($service =~ m/esp/i) {
+                     my $new_object;
+                        $new_object->{'@xsi.type'} = 'predefined';
+                        $new_object->{predefined_service_name} = 'ESP';
+                        push @{$exception->{security_policy_exception}->{exempted_traffic_list}->{exempted_traffic}->{service_collection}->{service_items}->{service_item}}, $new_object;
+                }
                 else {
                     if ($service =~ m/^(tcp|udp)\-(\d+)/) {
                         my $new_object; 
