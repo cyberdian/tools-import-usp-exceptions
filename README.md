@@ -52,7 +52,7 @@ The following webpage will allow you to upload USP exceptions :
 2. Fill all your USP Exception data in it
 	* **Inner delimiter** for multiple Sources, Destinations and Services is **','**
 	* Sources and Destinations **must be IP Address or Subnet (IP/Mask) or ANY**
-	* Services **must be tcp or udp with port number or ANY**, ex tcp-443 or udp-53
+	* Services **must be tcp or udp with port number, range number or ANY**, ex tcp-443 or udp-53 or tcp-1024-65535
 	* Date format **must be : Year-Month-Day (%Y-%m-%d)**
 	* CreatedBy **must be a valid SecureTrack account**
 	* Exception Name **must be unique** otherwise exception will not be inserted
@@ -66,7 +66,6 @@ rpm -ev tufin-tools-import-usp-exceptions
 
 ## TODO
 * Support for IP Ranges
-* Support for Services Ranges
 * Support for Domains
 
 ## Licensing
